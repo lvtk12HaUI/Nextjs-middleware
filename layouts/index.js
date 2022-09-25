@@ -1,5 +1,4 @@
 import React from "react";
-import Sidebar from '../components/sidebar/index'
 import useStyles from "../layouts/styles";
 import PerfectScrollbar from "perfect-scrollbar";
 import Head from "next/head";
@@ -53,7 +52,6 @@ export default function Layout({ title, children }) {
         <meta property="og:type" content="website" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Sidebar/>
       <MainPanel className={classes.mainPanel} ref={mainPanel}>
         <div className={classes.content}>
             <div className={classes.container}>{children}</div>
